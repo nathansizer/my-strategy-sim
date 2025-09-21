@@ -13,7 +13,7 @@ The entry point of the simulator, runs simulations using the other classes below
 
 ### Tyre
 
-Defines and models the tyres being used for the race. In our example the C4 is the soft tyre, C3 is the medium tyre and C2 is the hard. I'm using the base offset from the TV broadcast, the medium was estimated to be 0.05-0.15 seconds slower than the soft, and the hard 0.30-0.45 seconds slower than the soft. I'm using the worst case scenario numbers in my simulations.
+Defines and models the tyres being used for the race. In our example the C4 is the soft tyre, C3 is the medium tyre and C2 is the hard. I'm using the base offset from the TV broadcast, the medium was estimated to be 0.05-0.15 seconds slower (when brand new) than the soft, and the hard 0.30-0.45 seconds slower than the soft (when brand new). I'm using the worst case scenario numbers in my simulations. In terms of degredation rate, I'm just going to be using some arbitrary numbers as I don't have access to this kind of data. I'll be working this out based on the soft tyre degrading by 0.08 seconds per lap, the medium will be 0.05 seconds per lap, and the hard 0.03 seconds per lap. The same thinking applies for my tyre life numbers, let's say the soft will last 18 laps, the medium 28 laps and the hard 40 laps.
 
 ### Strategy
 
