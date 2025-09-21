@@ -16,7 +16,7 @@ class Tyre:
     #the modifier of time penalty based on a tyre's age
     def degModifier(self, age):
 
-        return (self.baseOffset + (age * self.degRate))
+        return self.baseOffset + (age * self.degRate)
 
 #my pre-defined tyre models for this example
 SOFT = Tyre("Soft", 0.0, 0.08, 18)

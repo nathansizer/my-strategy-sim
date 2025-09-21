@@ -10,10 +10,10 @@ class Strategy:
     def __init__(self, pitLaps, tyreOrder):
         
         self.pitLaps = pitLaps
-        self.tyreOrder = tyreOrder
+        self.tyreOrder = [tyreSets[t] for t in tyreOrder]
 
 
     #create a text representation of this strategy
     def __repr__(self):
         
-        return f"Strategy(pits={self.pitLaps}, tyres={[t.name for t in self.tyreOrder]})"
+        return f"Strategy(pit laps={self.pitLaps}, tyres={[t.name for t in self.tyreOrder]})"

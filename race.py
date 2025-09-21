@@ -17,7 +17,7 @@ class Race:
     #sim a single lap given the tyre and it's age
     def simLap(self, tyre, age):
 
-        return (self.baseLapTime + tyre.degModifier(age))
+        return self.baseLapTime + tyre.degModifier(age)
 
     #sim a whole stint on a set of tyres
     def simStint(self, start, end, tyre):
@@ -52,7 +52,7 @@ class Race:
             totalTime += stintTime
             everyLap.extend(stintLaps)
 
-            if i < len{strategy.pitLaps}:
+            if i < len(strategy.pitLaps):
                 totalTime += self.pitlaneLoss
                 everyLap.append(self.pitlaneLoss)
 
