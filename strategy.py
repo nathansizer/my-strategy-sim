@@ -2,7 +2,7 @@
 My strategy class
 """
 
-from tyres import tyreSets
+from tyre import tyreSets
 
 class Strategy:
 
