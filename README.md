@@ -27,8 +27,10 @@ Models a race using defined strategies. In our example, the 2025 British GP had 
 
 Things I'm going to add to this in the future:
 
-- Implement the tyre deg "cliff" (we have the lifespan already in place)
-- Include a little bit of randomness in the pit lane loss
+- Add a visual representation of all the strategies, rather than just printing the best as text.
+- Implement the tyre deg "cliff" where lap times fall off after a certain number of laps, creating a more realistic and less linear model (we have the lifespan already in place).
+- Include a little bit of randomness in the pit lane loss, to account for the variation in tyre changing times and possible slow stops.
+- Create an external, editable config file for tyre and race data
 
 
  
