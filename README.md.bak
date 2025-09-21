@@ -21,4 +21,4 @@ Defines a specific strategy: the lap numbers of each pit stop and the sequence o
 
 ### Race
 
-Models a race using defined strategies.
+Models a race
