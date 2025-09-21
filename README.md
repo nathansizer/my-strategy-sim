@@ -21,6 +21,14 @@ Defines a specific strategy: the lap numbers of each pit stop and the sequence o
 
 ### Race
 
-Models a race using defined strategies. In our example, the 2025 British GP had 52 laps, and I'm using a base lap time of 92 seconds (1m32s). Again, this isn't using the most accurate data and is mainly some arbitrary figures I've worked out, at the end of the day what matters here is the logic behind the simulations and the "plug and play" aspect of this code.
+Models a race using defined strategies. In our example, the 2025 British GP had 52 laps, I'm using a base lap time of 92 seconds (1m32s) and a pit loss of 25 seconds. Again, this isn't using the most accurate data and is mainly some arbitrary figures I've worked out, at the end of the day what matters here is the logic behind the simulations and the "plug and play" aspect of this code.
+
+## TODO
+
+Things I'm going to add to this in the future:
+
+- Implement the tyre deg "cliff" (we have the lifespan already in place)
+- Include a little bit of randomness in the pit lane loss
+
 
  
