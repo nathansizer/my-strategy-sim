@@ -30,5 +30,5 @@ for s in strategies:
 
 bestStrategy = min(results, key = lambda x: x["time"])
 
-print("Fastest Strategy: " bestStrategy["strategy"])
+print("Fastest Strategy: ", bestStrategy["strategy"])
 print("Total Race Time: ", round(best["time"], 2), " seconds")
