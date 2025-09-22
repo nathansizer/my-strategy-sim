@@ -25,7 +25,7 @@ class Race:
         stintTime = 0
         laps = []
 
-        for lap in range(start, end):
+        for lap in range(start, (end + 1)):
 
             age = lap - start
             lapTime = self.simLap(tyre, age)
@@ -53,8 +53,8 @@ class Race:
             everyLap.extend(stintLaps)
 
             if i < len(strategy.pitLaps):
+                everyLap[-1] += self.pitlaneLoss
                 totalTime += self.pitlaneLoss
-                everyLap.append(self.pitlaneLoss)
 
             currentLap = endStint + 1
 
