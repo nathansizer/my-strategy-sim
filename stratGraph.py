@@ -18,6 +18,9 @@ def plotStrategies(strats):
         gap = totalTimes[i] - baseline
         plt.plot(range(1, len(gap) + 1), gap, label = f"{s['strategy']}")
 
+        for p in s["strategy"].pitLaps:
+            plt.scatter(p, gap[p-1], color = plt.gca().lines[-1].get_color(), marker = "x", s = 60, zorder = 3, label = None)
+
     plt.xlabel("Lap")
     plt.ylabel("Gap to fastest strategy (secs)")
     plt.title("Race Strategy Simulation")
