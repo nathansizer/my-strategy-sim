@@ -31,6 +31,16 @@ def plotStrategies(strats):
         gap = totalTimes[i] - baseline
         plt.plot(range(1, len(gap) + 1), gap, label = f"{s['strategy']}")
 
+        finalGap = gap[-1]
+        plt.text(
+            len(gap) + 0.5,
+            finalGap,
+            f"+{finalGap:.1f}s",
+            va = "center",
+            fontsize = 10,
+            color = plt.gca().lines[-1].get_color()
+        )
+
         for p in s["strategy"].pitLaps:
             plt.scatter(p, gap[p-1], color = plt.gca().lines[-1].get_color(), marker = "x", s = 60, zorder = 3, label = None)
 
