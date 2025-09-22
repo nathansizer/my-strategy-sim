@@ -30,6 +30,7 @@ Plots all the strategies on a visual graph.
 ## Screenshots
 
 ![An example strategy graph](screenshots/ex_graph.png)
+An example of the output graph this simulator presents you with. Once again, I'm using arbitrary figures/data, but real (and much more accurate) data can be plugged in.
 
 ## Reflections
 

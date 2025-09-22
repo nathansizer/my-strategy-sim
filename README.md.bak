@@ -27,6 +27,10 @@ Models a race using defined strategies. In our example, the 2025 British GP had 
 
 Plots all the strategies on a visual graph.
 
+## Screenshots
+
+![An example strategy graph](screenshots/ex_graph.png)
+
 ## Reflections
 
 Overall, I'm happy with how this is turning out. Yes, it could look a bit prettier and there's definitely room for improvement in terms of functionality, but I'm happy with the logic and how it all works.
