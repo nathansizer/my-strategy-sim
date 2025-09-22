@@ -6,6 +6,7 @@ Everything is run from here, simulations are compared and the best is printed.
 
 from race import Race
 from strategy import Strategy
+from stratGraph import plotStrategies
 
 
 #define a race, here using the same parameters set out in the readme file
@@ -32,3 +33,5 @@ bestStrategy = min(results, key = lambda x: x["time"])
 
 print("Fastest Strategy: ", bestStrategy["strategy"])
 print("Total Race Time: ", round(bestStrategy["time"], 2), " seconds")
+
+plotStrategies(results)

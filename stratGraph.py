@@ -10,7 +10,7 @@ def plotStrategies(strats):
 
     for s in strats:
 
-        label = f"{res['strategy']}"
+        label = f"{s['strategy']}"
 
         plt.plot(res["lapTimes"], label = label)
 
