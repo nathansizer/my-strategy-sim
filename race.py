@@ -25,7 +25,7 @@ class Race:
         stintTime = 0
         laps = []
 
-        for lap in range(start, (end + 1)):
+        for lap in range(start, end):
 
             age = lap - start
             lapTime = self.simLap(tyre, age)
