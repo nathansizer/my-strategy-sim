@@ -9,15 +9,17 @@ def plotStrategies(strats):
 
     plt.figure(figsize = (10,6))
 
-    for s in strats:
+    totalTimes = [np.cumsum(s["lapTimes"]) for s in strats]
 
-        label = f"{s['strategy']}"
+    baseline = np.min(np.vstack(totalTimes), axis = 0)
 
-        totalTime = np.cumsum(s["lapTimes"])
-        plt.plot(range(1, len(totalTime) + 1), totalTime, label = label)
+    for i, s in enumerate(strats):
+
+        gap = totalTimes[i] - baseline
+        plt.plot(range(1, len(gap) + 1), gap, label = f"{s['strategy']}")
 
     plt.xlabel("Lap")
-    plt.ylabel("Lap Time (secs)")
+    plt.ylabel("Gap to fastest strategy (secs)")
     plt.title("Race Strategy Simulation")
     plt.legend()
     plt.show()
