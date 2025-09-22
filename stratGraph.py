@@ -12,7 +12,7 @@ def plotStrategies(strats):
 
         label = f"{s['strategy']}"
 
-        plt.plot(res["lapTimes"], label = label)
+        plt.plot(s["lapTimes"], label = label)
 
     plt.xlabel("Lap")
     plt.ylabel("Lap Time (secs)")
