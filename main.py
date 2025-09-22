@@ -17,7 +17,8 @@ strategies = [
 
     Strategy([25], ["medium", "hard"]),
     Strategy([15, 30], ["soft", "soft", "hard"]),
-    Strategy([18, 34], ["soft", "medium", "medium"])
+    Strategy([18, 34], ["soft", "medium", "medium"]),
+    Strategy([13, 26, 39], ["soft", "soft", "soft", "soft"])
 
 ]
 
